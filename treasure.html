@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ищем клад</title>
+</head>
+
+<body>
+
+    <h1>Давай поищем клад</h1>
+    <img id='find' width='600' height='600' src="https://stepfor.top/images/treasuremap.png">
+    <h3 id="prompt">Подсказка</h3>
+    <script>
+
+        // Получить случайные числа и задать их как координаты клада
+        let getRandomPos = function (size) {
+            return Math.floor(Math.random() * size)
+        }
+
+        // Функция высчитывает растояние от клика до клада
+
+        let getDistance = function (event, aim) {
+            let diffX = event.offsetX - aim.x;
+            let diffY = event.offsetY - aim.y;
+            return Math.sqrt(diffX * diffX) + (diffY + diffY)
+        }
+        // Сообщение в зависимости от растояния до клада
+
+        let disMess = function (getDistance) {
+            if (getDistance < 50) {
+                return 'Ты нашел меня';
+            } else if (getDistance < 100) {
+                return 'Ты очень рядом';
+            } else if (getDistance < 200) {
+                return 'Нет, далековато';
+            } else if (getDistance < 300) {
+                return 'Не там ищешь'
+            } else if (getDistance < 400) {
+                return 'Вообще не туда'
+            } else {
+                return 'ТЫ на другой карте';
+            }
+        }
+        //переменные
+        const width = 500;
+        const height = 500;
+        let clicks = 0;
+
+        //Координаты клада
+        let aim = {
+            x: getRandomPos(width),
+            y: getRandomPos(height),
+        }
+
+        // обработчик клика
+        let elem = document.getElementById('find')
+
+        elem.addEventListener('click', function (event) {
+            clicks++;
+
+            // получаем расстояние
+            let distance = getDistance(event, aim);
+
+            // переводим расстояние до клада в подсказку
+            let disMessege = disMess(distance);
+            document.getElementById('prompt').innerHTML = (disMessege)
+            if (distance < 50) {
+                alert("Клад найден! Сделано: " + clicks)
+            }
+        })
+    </script>
+
+</body>
+
+</html>
