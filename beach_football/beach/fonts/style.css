@@ -1,0 +1,233 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul,
+li {
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('beach/fonts/AvenirNextCyr-Bold.woff2') format('woff2'),
+        url('beach/fonts/AvenirNextCyr-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('beach/fonts/AvenirNextCyr-Medium.woff2') format('woff2'),
+        url('beach/fonts/AvenirNextCyr-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('beach/fonts/AvenirNextCyr-Regular.woff2') format('woff2'),
+        url('beach/fonts/AvenirNextCyr-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/*--------------------*/
+body {
+    font-family:  'Avenir Next Cyr' ;
+    background-color: #f4d1af;    
+    position: relative;
+    }
+   
+            
+
+.content{
+    width: 1466px;
+    height: 1073px; 
+    background-color: #fff;
+  margin-left:  67px;
+
+
+}
+
+
+.bg_mg{
+    width: 1466px;
+    height: 1073px;
+    margin: 15px -26px -15px 26px;
+    
+    background: url(beach/down-img.png) 100% 100% no-repeat,  url(beach/player.png) 100% 100% no-repeat ;
+}
+    
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-top: 127px;
+    margin-bottom: 177px;
+    padding: 64px 10px;
+    
+}
+
+.logo {
+    width: 60px;
+    height: 67px;
+    margin-left: 60px;
+    margin-right: 171px;
+}
+
+nav {
+    display: block;
+    margin-right: 325px;
+    
+}
+
+nav a {
+    
+    margin-right: 70px;
+}
+
+
+
+a {
+    
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nav :hover {
+    color: #01d98b;
+}
+
+.btn {
+    width: 185px;
+    height: 73px;
+    border: 1px solid #000;
+    border-radius: 12px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.btn:hover {
+    background-color: yellow;
+}
+.main{
+    position: relative;
+}
+h2 {
+    width: 400;
+    font-size: 40px;
+    margin-left: 77px;
+    margin-bottom: 2px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    width: 700;
+    font-size: 74px;
+    margin-left: 77px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-style: normal;
+}
+p {
+    width: 400;
+    font-size: 24px;
+    margin-left: 80px;
+    line-height: 42px;
+    margin-bottom: 96px;
+}
+.search{
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+margin-left: 80px;
+border: 1px solid #01d98b;
+width: 571px;
+height: 70px;
+border-radius: 5px;
+
+}
+.img{
+    flex: 0 0;
+    padding: 10px;
+}
+
+
+.input{
+    flex: auto;
+    align-self: center;
+    display: inline-block;    
+}
+.btn_search{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: url(beach/Ellipse\ .png) no-repeat center;
+    padding: 15px ;
+    margin: 10px;
+}
+.second span {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+  
+
+.ball{
+    position: relative;
+    left: 1200px;
+       margin-right: 176px;
+}
+
+.main {
+}
+.player {
+    width: 718px;
+    height: 1101px;
+    position: absolute;
+    right: 0px;
+    top: 420px;
+   
+}
+
+.img_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.down-img{
+    order: 2;
+    margin-bottom: 32px;
+    
+    
+}
+.tree{    
+    position: absolute;
+    left: 0;
+    top: 857px;
+    
+}
+     
