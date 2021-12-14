@@ -1,0 +1,822 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul,
+li {
+    list-style: none;
+}
+
+
+
+body{
+/* width: 1400px; */
+
+}
+.wrapper{
+  
+   
+    
+}
+.header{
+    background-color:  yellow;
+    
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    margin: 20px 230px 260px 230px;
+    padding-top: 60px;
+
+}
+
+.menu_btn{
+	display: none;
+	width: 30px;
+	height: 24px;
+	position: relative;
+    top: 100px;
+   right: -400px;
+}
+
+.menu_btn span{
+	width: 100%;
+	height: 3px;
+	background: #333333;
+	border-radius: 3px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: 0.5s all linear;
+}
+
+.menu_btn span:nth-of-type(2){
+	top: 10px;
+}
+
+.menu_btn span:nth-of-type(3){
+	top: 21px;
+}
+
+
+.menu_btn:hover span:nth-of-type(2), .menu_btn:active span:nth-of-type(2){
+	width: 0px;
+}
+.menu_btn:hover span:nth-of-type(1), .menu_btn:active span:nth-of-type(1){
+	transform: rotate(45deg);
+}
+.menu_btn:hover span:nth-of-type(3), .menu_btn:active span:nth-of-type(3){
+	transform: rotate(-45deg) translateX(15px) translateY(-15px);
+}
+
+
+
+.logo {
+    display: flex;
+    text-align: center;
+}
+.logo p{
+    margin: auto auto;
+    padding-left: 20px;
+}
+
+.description{
+    width: 510px;
+    margin: 0 auto;
+    text-align: center;;
+}
+
+.description .title{
+    margin-bottom: 24px;
+}
+
+.description .title h1{
+    margin-bottom: 24px;
+}
+
+.description .title p{
+    margin-bottom: 42px;
+}
+
+.Btn_header{
+    display: inline-block;
+    width: 254px;
+    height: 51px;
+    text-align: center;
+    background-color: yellow;
+    border: 2px solid #000;
+    vertical-align: middle;
+    margin-bottom: 184px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.Btn_header :hover{
+    background-color:rgb(123, 255, 0);
+}
+
+
+.arrow{
+    display: block;
+    margin: 0 auto;
+    height: 80px;
+    padding-bottom: 40px;
+    
+}
+
+.main{
+    background-color: #fff;
+    flex: 1 1 1fr;
+       margin: 0 200px ;
+}
+
+.skill{
+    margin-bottom: 250px;
+}
+
+.skill h2, p{
+    text-align: center;
+    margin: auto;
+}
+.skill h2{
+    margin: 75px 0 25px 0;
+}
+.skill p {
+    margin-bottom: 75px;
+}
+
+.all_programs{
+    display: flex;
+    flex-wrap: wrap;       
+}
+ 
+.program-item{
+    flex: 1 1 33.33%;
+    justify-content: center;
+    margin: 0 0 50px 0;
+    
+
+}
+
+.program-item-content{
+    display: flex;
+}
+
+.program-item-content-body{
+    flex: 1 1 auto;
+    padding: 0 0 0 15px;
+}
+
+
+.program-item img{
+    flex: 0 0 auto;
+}
+.program-item .title{
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
+.course{
+    text-align: center;
+}
+.course h2, p{
+    text-align: center;
+    margin: auto;
+}
+
+.course h2{
+    margin: 75px 0 25px 0;
+}
+.course p {
+    margin-bottom: 75px;
+}
+
+.all_course{
+    display: flex;
+    justify-content: space-around;
+}
+
+.course-item{
+    flex: 0 0 33.33%;
+    text-align: center;
+    align-items: baseline;
+    } 
+
+    .course-item .title{
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0 0 15px 0;
+        font-weight: bold;
+    }
+.course-item-img1, .course-item-img3{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: rgb(235, 233, 233);
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+
+    .course-item-img2{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: #000;
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+
+    .course-item .title{
+        font-size: 34px;
+        line-height: 30px;
+        margin: 0 0 15px 0;
+        font-weight: bold;
+        margin: 25px;
+    }
+  
+    .course-item p.price{
+        font-size: 34px;
+        line-height: 30px;
+        font-weight: bold;
+        margin-top: 50px;        
+    }
+
+.btn-course{
+    border: 1px solid #000;
+    display: inline-block;
+    width: 154px;
+    height: 51px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.works{
+    margin-bottom: 250px;
+}
+
+.works h2, p{
+    text-align: center;
+    margin: auto;
+}
+.works h2{
+    margin: 75px 0 25px 0;
+}
+.works p {
+    margin-bottom: 75px;
+}
+
+.all_works{
+    display: flex;
+    flex-wrap: wrap;       
+}
+ 
+.works-item{
+    flex: 0 0 25%;
+    justify-content: center;
+    margin: 0 0 50px 0;   
+    text-align: center;
+}
+
+.works-item-content{
+    
+}
+
+.works-item-content-body{
+    flex: 1 1 auto;
+    padding: 0 0 0 15px;
+}
+
+
+.works-item img{
+    flex: 0 0 auto;
+}
+.works-item .title{
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.works-item-content-img{
+    position: relative;
+}
+.img-eye{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color:#fff;
+    font-size: 12.5px;
+    
+}
+.img-clock{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color:#fff;
+    font-size: 12.5px;
+}
+.team{
+  
+}
+
+.team h2, p{
+    text-align: center;
+    margin: auto;
+}
+
+.team h2{
+    margin: 75px 0 25px 0;
+}
+.team p {
+    margin-bottom: 75px;
+}
+
+.all_team{
+    display: flex;
+   justify-content: center;
+}
+
+.team-item{
+    text-align: center;
+    align-items: baseline;
+    } 
+
+    .team-item .title{
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0 0 15px 0;
+        font-weight: bold;
+    }
+    .team-item .title{
+        font-size: 34px;
+        line-height: 30px;
+        margin: 0 0 15px 0;
+        font-weight: bold;
+        margin: 25px;
+    }
+  
+    .team-item p.skill{
+        margin-top: 25px;        
+    }
+    .img-socium{
+        display: flex;
+        justify-content: center;
+        height: 15px;
+    }
+    .img-socium img{
+        padding: 0 15px;
+    }
+
+
+.stats{
+    margin-top: 250px;
+  
+}
+
+.stats h2, p{
+    text-align: center;
+    margin: auto;
+}
+
+.stats h2{
+    margin: 75px 0 25px 0;
+}
+.stats p {
+    margin-bottom: 75px;
+}
+
+.all_stats{
+    display: flex;
+   justify-content: space-around;
+}
+
+.stats-item{
+    text-align: center;
+    align-items: baseline;
+    } 
+.stats-item .title{
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0 0 15px 0;
+        font-weight: bold;
+}
+.stats-item .title{
+        font-size: 34px;
+        line-height: 30px;
+        margin: 0 0 15px 0;
+        font-weight: bold;
+        margin: 25px;
+}
+.stats-item p.skill{
+        margin-top: 25px;        
+}
+    
+.author{
+    text-align: center;
+    margin-top: 100px;
+    ;
+}
+.img-name{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.img-profession{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+
+}
+
+.author p {
+    font-size: 20px;
+}
+
+.author p::before{
+    content: '';
+}
+.keep{
+    text-align: center;
+    margin-top: 150px;
+}
+.keep h3{
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.form{
+    margin:  auto;
+    text-align: center;
+
+    
+}
+
+.form input{
+    display: block;
+    border: 2px solid #000;
+    width: 241px;
+    margin: 10px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea{
+    border: 2px solid #000;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    resize: none;
+}
+                   
+.input_btn{
+    width: 126px;
+    background-color: #000;
+    color:#000;
+    font-size: 10px;
+    margin-bottom: 40px;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
+}
+
+.contacts_item{
+    text-align: center;
+}
+
+.contacts_item .title{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+   
+}
+
+.footer_title{
+    padding-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+
+
+}
+.footer_subtitle{
+    font-size: 20px;
+    color: rgb(173, 169, 163);
+
+}
+.footer_input{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    
+}
+
+.footer_input input{
+    display: inline-block;
+}
+
+.footer_input .footer_input_text{
+    text-align: start;
+    margin-right: 15px;
+    width: 500px;
+    vertical-align: top;
+    height: 30px;
+
+
+
+}
+   
+
+.input_btn{
+    height: 30px;
+    text-align: center;
+    color: black;
+    background: #fff;
+    margin-left: -6px;
+    border: none;
+}
+
+.footer_info{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1241px){
+    .head{
+        margin: 20px 100px 160px 200px;
+    }
+    .socium a {
+        margin-right: 20px
+    }
+    .Btn_header{
+        margin-bottom: 124px;
+    }
+    .skill{
+        margin-bottom: 180px;
+    }
+    .works{
+        margin-bottom: 180PX;
+    }
+    .works-item {
+        flex: 0 0 50%;
+    }
+    .stats{
+        margin-top: 180px;
+    }
+
+}
+
+@media (max-width: 1024px){
+    .socium a {
+        margin-right: 20px
+    }
+.head{
+    margin: 20px 100px 100px 200px;
+}
+.skill{
+    margin-bottom: 100px;
+}
+.skill p{
+    margin-bottom: 50px;
+}
+.program-item {
+    flex: 1 1 50%;
+}
+.contacts_item{
+    margin-right: 50px;
+}
+.works {
+    margin-bottom: 100px;
+}
+.team-item {
+    margin-right: 30px;
+}
+.stats {
+    margin-top: 100px;
+}
+.keep {
+     margin-top: 100px;
+}
+.contacts {
+        margin: 45px 0;
+}
+}
+@media (max-width: 959px){
+    .head{
+        margin: 20px 100px 70px 100px;
+    }
+    .Btn_header{
+        margin-bottom: 74px;
+    }
+    .course-item {
+       margin-right: 10px
+}
+.works {
+    margin-bottom: 50px;
+}
+.footer_subtitle {
+        font-size: 15px;
+}
+}
+@media (max-width: 720px){
+    head {margin: 20px 50px 30px 50px;
+}
+
+    .all_programs {
+        display: block;
+    }
+    .skill {
+        margin-bottom: 50px;
+    }
+
+
+    .works-item {
+        justify-content: center;}
+
+    
+    .stats {
+        margin-top: 50px;
+    }
+    .footer_input .footer_input_text {
+        padding-left: 10px;
+    }
+    .footer_info {
+      padding-bottom: 15px;
+}
+}
+@media (max-width: 540px){
+    .socium a {
+        margin-right: 10px;
+    }
+    .description .title p {
+        margin-bottom: 21px;
+    }
+    .course-item .title {
+        margin: 50px;
+    }
+
+    .course-item p.price {
+        font-size: 25px;
+        line-height: 10px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .course p {
+        margin-bottom: 25px;
+    }
+
+    .btn-course {
+        border: 1px solid #000;
+        display: inline-block;
+        width: 104px;
+        height: 31px;
+        text-align: center;
+        background-color: #fff;
+        border: 2px solid #000;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .works h2 {
+        margin: 45px 0 25px 0;
+    }
+    .works h2 {
+        margin: 45px 0 25px 0;
+    }
+    .all_team {
+        display: block;
+    }
+    .team-item {
+        margin-bottom: 50px;
+    }
+    .team-item {
+        margin-bottom: 30px;
+    }
+    .team-item p.skill {
+        margin-top: 10px;
+    }
+    
+    .team p {
+        margin-bottom: 55px;
+    }
+
+    .author p {
+        font-size: 15px;
+    }
+
+  .contacts_item {
+            margin-right: 20px;
+  }
+  .footer_subtitle {
+    padding: 15px;
+    font-size: 15px;
+  }
+  .footer_input .footer_input_text {
+    text-align: start;
+    padding-left: 10px;
+    margin-right: 15px;
+    width: 200px;
+}
+}
+@media (max-width: 450px){
+
+
+    .menu_btn {
+		display: inline-block;
+		z-index: 10;
+        
+	}
+
+	.menu_btn:hover + .socium + .burger, .menu_btn:active + .socium + .burger{
+		display: block;
+    }
+    
+	.socium{
+		position: absolute;
+		left: 20px;
+		top: 20px;
+		width: 100vw;
+		padding: 40px;
+		background: #fff;
+		border-radius: 0 0 15px 15px;
+		box-shadow: 0 2px 2px #e2e2e2;
+		display: none;
+	}
+    .burger{
+        display: none;
+    }
+    .description {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .main {
+        margin: 0 auto;
+    }
+    .skill {
+    margin: 50px; 
+    }
+    .all_course{
+        display: block;
+    }
+    .course {
+        margin: 50px;
+    }
+    .course-item-body{
+        margin-bottom: 50px;
+    }
+    .course-item{
+        margin-bottom: 50px;
+    }
+    .works p {
+        margin: 0 25px 50px;
+    }
+    .all_works {
+        display: block;
+        margin-bottom: 50px;  
+    }
+    .team p {
+        margin: 0 25px 55px;
+    }
+    .stats p {
+        margin: 0 25px 0 50px;
+    }
+    .all_stats{
+        display: block;
+    } 
+    .stats-item {
+       text-align: center;
+        margin-bottom: 50px;
+}
+.stats h2, p {
+    text-align: center;
+    margin: 0 25px 35px;
+}
+.contacts{
+    display: block;
+}
+}
