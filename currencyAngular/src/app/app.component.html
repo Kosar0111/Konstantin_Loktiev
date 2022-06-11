@@ -1,0 +1,29 @@
+<body>
+  <header>
+    <marquee>
+      <h1>Currency Exchange</h1>
+    </marquee>
+  </header>
+
+  <div class="main">
+    <div class="container">
+      <div class="select">
+        <select #c1 name="" id="count" (mouseleave)="changebase(c1.value)">
+          <option value="USD">US Dollar</option>
+          <option value="EUR">Euro</option>
+          <option value="UAH">UA Hrivna</option>
+        </select>
+        <p>to</p>
+        <select #c2 name="" id="count" (mouseleave)="tocountry(c2.value)">
+          <option value="USD">US Dollar</option>
+          <option value="EUR">Euro</option>
+          <option value="UAH">UA Hrivna</option>
+        </select>
+      </div>
+      <button (click)="convert()">Exchange</button>
+      <div class="result">
+        <p>1 {{base}} = {{result}} {{cont2}}</p>
+      </div>
+    </div>
+  </div>
+</body>

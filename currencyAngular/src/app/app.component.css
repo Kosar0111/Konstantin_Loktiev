@@ -1,0 +1,89 @@
+
+
+body {
+    background-image: url(https://nationsonline.org/gallery/World/World-Flag-map-Nell.jpg) ;
+    background-size: cover;
+    font-family: Montserrat, 'Playfair Display', Ubuntu,  sans-serif;
+    height: 100vh;
+}
+header h1 {
+    font-size: 50px;
+    color: chartreuse;
+}
+
+.main{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 700px;
+}
+
+.container{
+    background-color:  rgb(50, 47, 255);
+    width: 350px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.select{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+
+.select p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    }
+
+select{
+    font-size: 17px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    font-weight: 700;
+   
+}
+
+select:focus{
+    outline: none;
+}
+
+option{
+    font-family: Montserrat, 'Playfair Display', Ubuntu,  sans-serif;
+    font-weight: 700;
+    color:rgb(255, 47, 203)
+}
+
+button{
+    background-color: rgb(70, 172, 49);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color:black;
+    font-size: 25px;
+    
+}
+
+button:hover{
+    background-color: #fff;
+    color: rgb(190, 175, 40);
+    cursor: pointer;
+    }
+.result {
+    display: flex;
+    background-color: rgb(188, 221, 39);
+    margin: 10px;
+    width: 200px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.result p{
+    font-size: 15px;
+    }
