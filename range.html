@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/min/nouislider.min.css">
+    <title>Document</title>
+
+    <style>
+        .filter__item {
+            max-width: 410px;
+        }
+
+        .filters-price__inputs {
+            display: flex;
+            justify-content: start;
+
+        }
+
+        .filters-price__label {
+            display: flex;
+            align-items: center;
+            width: 253px;
+            height: 40px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            margin-right: 70px;
+            padding: 0 10px;
+            font-size: 14px;
+            margin-top: 20px;
+
+        }
+
+        .filters-price__text {
+            font-size: 14px;
+            color: #808080;
+        }
+
+        .filters-price__text:first-child {
+            margin-right: 10px;
+        }
+
+        .filters-price__text:last-child {
+            margin-left: 10px;
+        }
+
+        .filters-price__input {
+            border: none;
+            color: #4d4d4d;
+            font-size: 14px;
+            padding: 0 10px;
+        }
+
+        .filters-price__title {
+            margin-bottom: 20px;
+        }
+
+
+        .noUi-target {
+            background: #bfbfbf;
+            border: none;
+            border: radius 10px;
+            box-shadow: 2px;
+            height: 3px;
+        }
+
+        .noUi-connect {
+            background: #5d71dd;
+
+        }
+
+        .noUi-handle::after,
+        .noUi-handle::before {
+            display: none;
+        }
+
+        .noUi-handle {
+            box-shadow: none;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 3px solid #5d71dd;
+        }
+
+        .noUi-horizontal .noUi-handle {
+            height: 22px;
+            width: 22px;
+            top: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="filter__item filters-price">
+        <h3 class="filters-price__title">Price</h3>
+        <div class="filters-price__slider" id="range-slider"></div>
+        <div class="filters-price__inputs">
+            <label class="filters-price__label">
+                <span class="filters-price__text">from</span>
+                <input type="number" min="100" max="999999" placeholder="100" class="filters-price__input" id="input-1">
+                <span class="filters-price__text">grn</span>
+            </label>
+            <label class="filters-price__label">
+                <span class="filters-price__text">to</span>
+                <input type="number" min="100" max="999999" placeholder="999999" class="filters-price__input"
+                    id="input-2">
+                <span class="filters-price__text">grn</span>
+            </label>
+
+        </div>
+    </div>
+
+    <script src="/min/nouislider.min.js"></script>
+    <script>
+        let rangeSlider = document.getElementById('range-slider');
+
+        if (rangeSlider) {
+            noUiSlider.create(rangeSlider, {
+                start: [100, 999999],
+                connect: true,
+                step: 1,
+                range: {
+                    'min': [100],
+                    'max': [999999]
+                }
+            });
+
+            let inpu0 = document.getElementById('input-1');
+            let inpu1 = document.getElementById('input-2');
+            let inputs = [inpu0, inpu1];
+
+
+            rangeSlider.noUiSlider.on('update', function (values, handle) {
+                inputs[handle].value = Math.round(values[handle]);
+            });
+
+            let setRangeSlider = (i, value) => {
+                let arr = [null, null];
+                arr[i] = value;
+
+                rangeSlider.noUiSlider.set(arr)
+            }
+
+            inputs.forEach((el, index) => {
+                el.addEventListener('change', (e) => {
+                    setRangeSlider(index, e.currentTarget.value);
+                })
+            })
+        }
+
+
+
+    </script>
+</body>
+
+
+</html>
