@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.chart {
+  margin: 100px auto;
+  width: 80vw;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.row{
+  display: flex;
+  width: 100%;
+}
+
+.line{
+  position: relative;
+  height: 30px;
+  width: calc(100% - 120px);
+  background: #e2e2e2;
+  margin-bottom: 10px;
+}
+
+.legend{
+  width: 120px;
+  text-align: right;
+  padding-right: 14px;
+}
+
+.tile{
+  background: turquoise;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.tile_text{
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  left: calc(50% - 15px);
+  line-height: 30px;
+}
